@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How It Works - PetCare</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container nav" aria-label="Main">
+      <a class="logo" href="index.html"><span aria-hidden="true">🐾</span> PetCare</a>
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu">&#9776;</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="find-pets.html">Find a Pet</a></li>
+        <li><a href="how-it-works.html" class="active" aria-current="page">How It Works</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container section">
+    <div class="section-head">
+      <h1>How adoption works</h1>
+      <p>Four simple steps from browsing to bringing your pet home.</p>
+    </div>
+    <div class="grid grid-4">
+      <article class="card step"><div class="step-icon" aria-hidden="true">🔎</div><h3>1. Browse</h3><p>Use search and filters on the Find a Pet page to meet pets that suit your home.</p></article>
+      <article class="card step"><div class="step-icon" aria-hidden="true">📝</div><h3>2. Apply</h3><p>Open a pet's page and choose Apply to Adopt. Tell the shelter a little about you.</p></article>
+      <article class="card step"><div class="step-icon" aria-hidden="true">💬</div><h3>3. Talk and meet</h3><p>The shelter reviews your application, answers questions and arranges a visit.</p></article>
+      <article class="card step"><div class="step-icon" aria-hidden="true">🏡</div><h3>4. Take them home</h3><p>Finish the paperwork, then welcome your new family member.</p></article>
+    </div>
+    <p style="margin-top:2rem"><a class="btn btn-primary" href="find-pets.html">Start browsing</a></p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>🐾 PetCare</h3>
+          <p>Find your forever friend.</p>
+        </div>
+        <div>
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="find-pets.html">Find a Pet</a></li>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Account</h3>
+          <ul>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contact (placeholders)</h3>
+          <ul>
+            <li>hello@petcare.example</li>
+            <li>555-0100</li>
+            <li>12 Sample Street, Maple Grove</li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-bottom">&copy; <span data-year>2026</span> PetCare. College project demo: all pets, people and numbers are sample data.</p>
+    </div>
+  </footer>
+
+  <script src="js/mock-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

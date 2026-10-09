@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About - PetCare</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container nav" aria-label="Main">
+      <a class="logo" href="index.html"><span aria-hidden="true">🐾</span> PetCare</a>
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu">&#9776;</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="find-pets.html">Find a Pet</a></li>
+        <li><a href="how-it-works.html">How It Works</a></li>
+        <li><a href="about.html" class="active" aria-current="page">About</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container section">
+    <div class="section-head">
+      <h1>About PetCare</h1>
+      <p>PetCare is a college project that imagines a friendly place where shelters and adopters meet.</p>
+    </div>
+    <div class="grid grid-3">
+      <section class="card card-body"><h2>Our mission</h2><p>Help every adoptable pet find a loving, permanent home by making adoption clear, kind and easy to understand.</p></section>
+      <section class="card card-body"><h2>Responsible adoption</h2>
+        <p>A pet is a long-term commitment. We encourage adopters to:</p>
+        <ul><li>Plan for food, vet care and time</li><li>Meet the pet before deciding</li><li>Never adopt on impulse</li></ul></section>
+      <section class="card card-body"><h2>Welcome</h2><p>Whether you want a playful puppy, a quiet senior cat or a gentle rabbit, you are in the right place.</p>
+        <p class="sample-note">This is a frontend prototype. There is no real backend, and the pets are sample data.</p></section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>🐾 PetCare</h3>
+          <p>Find your forever friend.</p>
+        </div>
+        <div>
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="find-pets.html">Find a Pet</a></li>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Account</h3>
+          <ul>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contact (placeholders)</h3>
+          <ul>
+            <li>hello@petcare.example</li>
+            <li>555-0100</li>
+            <li>12 Sample Street, Maple Grove</li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-bottom">&copy; <span data-year>2026</span> PetCare. College project demo: all pets, people and numbers are sample data.</p>
+    </div>
+  </footer>
+
+  <script src="js/mock-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

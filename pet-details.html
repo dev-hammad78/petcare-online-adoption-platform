@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pet Details - PetCare</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container nav" aria-label="Main">
+      <a class="logo" href="index.html"><span aria-hidden="true">🐾</span> PetCare</a>
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu">&#9776;</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="find-pets.html" class="active" aria-current="page">Find a Pet</a></li>
+        <li><a href="how-it-works.html">How It Works</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <p style="margin-top:1.5rem"><a href="find-pets.html">&larr; Back to all pets</a></p>
+    <div id="pet-details" style="margin-top:1rem"></div>
+
+    <section class="section" id="similar-section">
+      <h2>Similar pets</h2>
+      <div class="grid grid-3" id="similar-pets"></div>
+    </section>
+  </main>
+
+  <!-- Adoption application form (opens from the Apply to Adopt button) -->
+  <dialog id="apply-dialog" aria-labelledby="apply-title">
+    <h2 id="apply-title">Apply to adopt <span id="apply-pet-name"></span></h2>
+    <p class="sample-note">Demo only: your answers are saved in this browser, not sent anywhere.</p>
+    <form id="apply-form" novalidate>
+      <div class="form-row">
+        <label for="applicantName">Your name</label>
+        <input id="applicantName" name="applicantName" type="text" autocomplete="name">
+        <p class="field-error" id="err-applicant-name"></p>
+      </div>
+      <div class="form-row">
+        <label for="applicantEmail">Email</label>
+        <input id="applicantEmail" name="applicantEmail" type="email" autocomplete="email">
+        <p class="field-error" id="err-applicant-email"></p>
+      </div>
+      <div class="form-row">
+        <label for="reason">Why would you like to adopt?</label>
+        <textarea id="reason" name="reason" rows="3"></textarea>
+        <p class="field-error" id="err-reason"></p>
+      </div>
+      <div class="dialog-actions">
+        <button type="button" class="btn btn-outline btn-small" id="apply-cancel">Cancel</button>
+        <button type="submit" class="btn btn-accent btn-small">Send application</button>
+      </div>
+    </form>
+  </dialog>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>🐾 PetCare</h3>
+          <p>Find your forever friend.</p>
+        </div>
+        <div>
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="find-pets.html">Find a Pet</a></li>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Account</h3>
+          <ul>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contact (placeholders)</h3>
+          <ul>
+            <li>hello@petcare.example</li>
+            <li>555-0100</li>
+            <li>12 Sample Street, Maple Grove</li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-bottom">&copy; <span data-year>2026</span> PetCare. College project demo: all pets, people and numbers are sample data.</p>
+    </div>
+  </footer>
+
+  <script src="js/mock-data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/pets.js"></script>
+</body>
+</html>

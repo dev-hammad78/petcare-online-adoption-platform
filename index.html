@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PetCare - Find your forever friend</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container nav" aria-label="Main">
+      <a class="logo" href="index.html"><span aria-hidden="true">🐾</span> PetCare</a>
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu">&#9776;</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+        <li><a href="find-pets.html">Find a Pet</a></li>
+        <li><a href="how-it-works.html">How It Works</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h1>Your new best friend is waiting.</h1>
+          <p class="lead">Every pet here is looking for a patient, caring home. Adopt responsibly: meet them, ask questions, and choose a companion you can look after for life.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="find-pets.html">Find Your Companion</a>
+            <a class="btn btn-outline" href="register.html">Register as a Shelter</a>
+          </div>
+        </div>
+        <img class="hero-photo" src="assets/images/hero.jpg" alt="A happy dog sitting in a sunny garden">
+      </div>
+    </section>
+
+    <div class="container">
+      <form class="card search-bar" action="find-pets.html" method="get" aria-label="Search for a pet">
+        <div class="form-row">
+          <label for="home-species">Animal type</label>
+          <select id="home-species" name="species">
+            <option value="">Any animal</option>
+            <option>Dog</option><option>Cat</option><option>Rabbit</option><option>Bird</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="home-breed">Breed</label>
+          <input id="home-breed" name="q" type="text" placeholder="e.g. Beagle">
+        </div>
+        <div class="form-row">
+          <label for="home-location">Location</label>
+          <select id="home-location" name="location">
+            <option value="">Any location</option>
+            <option>Hillview</option><option>Lakeside</option><option>Maple Grove</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-accent">Search pets</button>
+      </form>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Pets looking for a home</h2>
+          <p>A few of the friends who are ready to meet you.</p>
+        </div>
+        <div class="grid grid-3" id="featured-pets"></div>
+        <p style="margin-top:2rem"><a class="btn btn-outline" href="find-pets.html">See all pets</a></p>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head"><h2>Adopt in three steps</h2></div>
+        <div class="grid grid-3">
+          <article class="card step"><div class="step-icon" aria-hidden="true">🔎</div><h3>1. Find a pet</h3><p>Search by species, age or location and read each pet's story.</p></article>
+          <article class="card step"><div class="step-icon" aria-hidden="true">📝</div><h3>2. Apply</h3><p>Send a short adoption application. The shelter reviews it and replies.</p></article>
+          <article class="card step"><div class="step-icon" aria-hidden="true">🏡</div><h3>3. Welcome them home</h3><p>Meet your pet, finish the paperwork and start your life together.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head"><h2>Why adopt?</h2></div>
+        <div class="grid grid-3">
+          <div><h3>You save a life</h3><p>Adopting frees up shelter space for the next animal in need.</p></div>
+          <div><h3>Health checked</h3><p>Shelter pets are usually vaccinated, and many are neutered and microchipped.</p></div>
+          <div><h3>Known personalities</h3><p>Staff can tell you how each pet behaves, so you can find a good match.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Happy homes</h2>
+          <p class="sample-note">Sample stories written for this demo. They are not real people.</p>
+        </div>
+        <div class="grid grid-3">
+          <blockquote class="card quote"><p>Bruno settled in on day one. He now owns the sofa.</p><footer>Sample adopter, Maple Grove</footer></blockquote>
+          <blockquote class="card quote"><p>The shelter team answered all my questions before I applied.</p><footer>Sample adopter, Lakeside</footer></blockquote>
+          <blockquote class="card quote"><p>Luna was shy for a week. Now she greets me at the door.</p><footer>Sample adopter, Hillview</footer></blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <p class="sample-note">Sample statistics for the demo.</p>
+        <div class="grid grid-4">
+          <div class="card stat"><strong>1,240</strong>Pets adopted</div>
+          <div class="card stat"><strong>86</strong>Partner shelters</div>
+          <div class="card stat"><strong>3,500</strong>Registered adopters</div>
+          <div class="card stat"><strong>12</strong>Cities covered</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="container">
+        <h2>Ready to meet your match?</h2>
+        <p>Browse pets near you and send your first application today.</p>
+        <a class="btn btn-accent" href="find-pets.html">Find Your Companion</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>🐾 PetCare</h3>
+          <p>Find your forever friend.</p>
+        </div>
+        <div>
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="find-pets.html">Find a Pet</a></li>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Account</h3>
+          <ul>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contact (placeholders)</h3>
+          <ul>
+            <li>hello@petcare.example</li>
+            <li>555-0100</li>
+            <li>12 Sample Street, Maple Grove</li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-bottom">&copy; <span data-year>2026</span> PetCare. College project demo: all pets, people and numbers are sample data.</p>
+    </div>
+  </footer>
+
+  <script src="js/mock-data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/pets.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log in - PetCare</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container nav" aria-label="Main">
+      <a class="logo" href="index.html"><span aria-hidden="true">🐾</span> PetCare</a>
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu">&#9776;</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="find-pets.html">Find a Pet</a></li>
+        <li><a href="how-it-works.html">How It Works</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="login.html" class="active" aria-current="page">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="card auth-wrap">
+      <h1>Welcome back</h1>
+      <p>Log in to manage applications, pets or the platform.</p>
+      <p class="sample-note">Demo only: this login is not real security. Real authentication comes with the Java backend.</p>
+
+      <form id="login-form" novalidate>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email">
+          <p class="field-error" id="err-email"></p>
+        </div>
+        <div class="form-row">
+          <label for="password">Password</label>
+          <input id="password" name="password" type="password" autocomplete="current-password">
+          <p class="field-error" id="err-password"></p>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Log in</button>
+      </form>
+      <p style="margin-top:1rem">New to PetCare? <a href="register.html">Create an account</a></p>
+
+      <section style="margin-top:1.5rem; border-top:1px solid var(--line); padding-top:1.2rem">
+        <h2 style="font-size:1.15rem">Demo accounts</h2>
+        <p>Skip typing: continue as one of the sample users. Or log in with the emails below and the password <strong>demo1234</strong>.</p>
+        <ul>
+          <li>admin@petcare.demo (Admin)</li>
+          <li>shelter@petcare.demo (Shelter)</li>
+          <li>adopter@petcare.demo (Adopter)</li>
+        </ul>
+        <div class="grid" style="gap:0.6rem">
+          <button type="button" class="btn btn-outline" data-demo-role="Admin">Continue as Admin</button>
+          <button type="button" class="btn btn-outline" data-demo-role="Shelter">Continue as Shelter</button>
+          <button type="button" class="btn btn-outline" data-demo-role="Adopter">Continue as Adopter</button>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>🐾 PetCare</h3>
+          <p>Find your forever friend.</p>
+        </div>
+        <div>
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="find-pets.html">Find a Pet</a></li>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Account</h3>
+          <ul>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contact (placeholders)</h3>
+          <ul>
+            <li>hello@petcare.example</li>
+            <li>555-0100</li>
+            <li>12 Sample Street, Maple Grove</li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-bottom">&copy; <span data-year>2026</span> PetCare. College project demo: all pets, people and numbers are sample data.</p>
+    </div>
+  </footer>
+
+  <script src="js/mock-data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/auth-demo.js"></script>
+</body>
+</html>
